@@ -1,7 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class LoginPage {
     WebDriver driver;
@@ -21,6 +20,7 @@ public class LoginPage {
     private final By passwordLogin = By.xpath(("//*[@id=\"password\"]"));
     private final By alertMessage = By.xpath(("//*[@id=\"register-alert\"]"));
     private final By login = By.xpath("//*[@id=\"login\"]/form/div[4]/button");
+    private final By logOut = By.xpath("//*[@id=\"logout-link\"]/a");
 
     public void clickRegisterButton() {
         driver.findElement(registerButton).click();
@@ -45,6 +45,7 @@ public class LoginPage {
         driver.findElement(descriptionField).sendKeys(text);
         driver.findElement(descriptionField).sendKeys(Keys.TAB);
     }
+
     public void clickSubmitButton() {
         driver.findElement(submitButton).click();
      }
@@ -71,4 +72,9 @@ public class LoginPage {
     public void clickLogin() {
         driver.findElement(login).click();
     }
+
+    public void clickLogOut() {
+        driver.findElement(logOut).click();
+    }
+
 }

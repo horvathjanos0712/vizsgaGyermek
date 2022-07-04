@@ -1,0 +1,7 @@
+Number	Name	Position
+1	PABLO ESCOBAR	Creative Director
+2	MONTINO RIAU	Product Manager
+3	ALEX NAASRI	Chief Design Officer
+4	HONGMAN CHIOA	UX Researcher
+5	SANTIO ANDRESS	Content Researcher
+6	RAMESH PAUL	Creative Designer
